@@ -172,7 +172,7 @@ for j in range(numberofrows):
     for i in range(len(structure)):
         AtomCoordinates = []
         AtomCoordinates = [data_x[i],data_y[i],data_z[i]]
-        newVectorsAdj = [[VectorsAdj[0][0]*2,VectorsAdj[0][1]*2,VectorsAdj[0][2]],[VectorsAdj[1][0]*2,VectorsAdj[1][1]*2,VectorsAdj[1][2]],[VectorsAdj[2][0]*2,VectorsAdj[2][1]*2,VectorsAdj[2][2]]]
+        newVectorsAdj = [[VectorsAdj[0][0]*unit1,VectorsAdj[0][1]*unit2,VectorsAdj[0][2]]*unit3,[VectorsAdj[1][0]*unit1,VectorsAdj[1][1]*unit2,VectorsAdj[1][2]]*unit3,[VectorsAdj[2][0]*unit1,VectorsAdj[2][1]*unit2,unit3*VectorsAdj[2][2]]]
         MatrixMulti = np.matmul(AtomCoordinates,(newVectorsAdj))
         print(atoms[i],MatrixMulti[0],MatrixMulti[1],MatrixMulti[2],file=h)
     h.close()
