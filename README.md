@@ -5,7 +5,7 @@ Each XYZ file frame is converted into a POSCAR file, then the POSCAR file conver
 The python script works with:
 
 ```
-python -i SCMFXYZ.py -inp1 <VECTORFILE> -inp1 <XYZ FILE> -u <SUPERCELL INFO> -out <OUTPUT XYZ FILE>
+python -i SCMFXYZ.py -inp1 <VECTORFILE> -inp2 <XYZ FILE> -u <SUPERCELL INFO> -out <OUTPUT XYZ FILE>
 ```
 
 for example:
