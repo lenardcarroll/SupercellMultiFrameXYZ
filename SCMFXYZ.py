@@ -89,7 +89,7 @@ with open(args.input2) as f:
 g = open(args.input2,"r")
 content = g.readlines()
 #determines how many frames the file has
-numberofrows = int(len(content)/numberofatoms)
+numberofrows = int(len(content)/(numberofatoms+2))
 
 #Writes output file
 h = open(args.output,"w")
